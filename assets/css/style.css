@@ -309,68 +309,47 @@ a {
 }
 
 /* Botão Inicio */
-.cta {
-    position: relative;
-    margin: auto;
-    padding: 12px 18px;
-    transition: all 0.2s ease;
-    border: none;
-    background: none;
+/* From Uiverse.io by iZOXVL */ 
+.boton-elegante {
+    padding: 15px 30px;
+    border: 2px solid #2c2c2c;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-size: 1.2rem;
     cursor: pointer;
-}
-
-.cta span {
-    font-size: clamp(1.2rem, 1.5vw + 1rem, 2rem);
-}
-
-.cta:before {
+    border-radius: 30px;
+    transition: all 0.4s ease;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+  }
+  
+  .boton-elegante::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    display: block;
-    border-radius: 50px;
-    background: var(--color-green);
-    width: 45px;
-    height: 45px;
-    transition: all 0.3s ease;
-}
-
-.cta span {
-    position: relative;
-    font-family: var(--font-pequena);
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    color: var(--color-black);
-}
-
-.cta svg {
-    position: relative;
-    top: 0;
-    margin-left: 10px;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke: var(--color-green);
-    stroke-width: 2;
-    transform: translateX(-5px);
-    transition: all 0.3s ease;
-}
-
-.cta:hover:before {
     width: 100%;
-    background: var(--color-destaque2);
-}
-
-.cta:hover svg {
-    transform: translateX(0);
-    stroke: var(--color-destaque1);
-}
-
-.cta:active {
-    transform: scale(0.95);
-}
+    height: 100%;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    transform: scale(0);
+    transition: transform 0.5s ease;
+  }
+  
+  .boton-elegante:hover::after {
+    transform: scale(4);
+  }
+  
+  .boton-elegante:hover {
+    border-color: #666666;
+    background: #292929;
+  }
+  
 
 .complemento-inicio {
     position: absolute;
