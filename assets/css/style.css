@@ -837,6 +837,10 @@ a {
     padding: 2rem 0rem 7rem 0rem;
 }
 
+.img-carrosel{
+    border-radius: 40px;
+    object-fit: contain;
+}
 .container-portfolio {
     width: 100%;
     max-width: 1400px;
