@@ -81,14 +81,14 @@ a {
     transition: opacity 0.5s ease, box-shadow 0.5s ease;
 }
 
-#backToTop {
+#drive {
     bottom: 20px;
     left: 20px;
     background-color: red;
     box-shadow: 0px 0px 10px rgba(245, 3, 3, 0.5); 
 }
 
-#backToTop i{
+#drive i{
     color: white;
 }
 #whatsappButton {
@@ -148,6 +148,7 @@ a {
     background-color: #80b276da; 
     backdrop-filter: blur(10px); 
     -webkit-backdrop-filter: blur(10px); 
+    height:100px;
 }
 
 /* Logo */
@@ -952,6 +953,7 @@ a {
     color: var(--color-black);
     font-size: 6vw;
     letter-spacing: 3px;
+    margin-top: 45px;
 }
 
 .conteudo-textos-case p {
